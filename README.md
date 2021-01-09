@@ -18,7 +18,8 @@ This To-do web app is made using-
 ---
 
 In this web app, CRUD is implemented.
-
+| Letter | Description |
+| ----------- | ----------- |
 | C | Create records in database |
 | R | Read records from database |
 | U | Update record in database |
