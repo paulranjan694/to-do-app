@@ -7,12 +7,13 @@ Categories under which you can create your tasks are -
 ---
 
 This To-do web app is made using-
-+HTML
-+CSS
-+JS
-+Node.Js
-+Express - Node.js web app Framework
-+MongoDB
+
+- HTML
+- CSS
+- JS
+- Node.Js
+- Express - Node.js web app Framework
+- MongoDB
 
 ---
 
