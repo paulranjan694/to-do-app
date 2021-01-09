@@ -7,7 +7,7 @@ module.exports.main = function (req, res) {
       return;
     }
 
-    console.log('frtched*******', todos);
+    // console.log('frtched*******', todos);
     res.render('index', {
       title: 'TODO App',
       todo_list: todos,

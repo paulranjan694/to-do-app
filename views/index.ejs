@@ -65,39 +65,47 @@
 
             <div class="todo-task-container">
 
-                <div class="horizontal-divider ml-mr-width"></div>
-                <div class="todo-cards">
-                    <div class="task-delete-checkbox">
-                        <input type="checkbox" name="" id="">
-                    </div>
-                    <div class="task-details">
-                        <p class="task-title">Why not add a task?</p>
-                        <p class="task-due-date">
-                            <i class="far fa-calendar-alt calender-icon"></i>
-                            May 2,2020
-                        </p>
-                    </div>
-                    <div class="task-category">
-                        <p>WORK</p>
-                    </div>
-                </div>
+                <% for(let todo of todo_list) {%>
 
-                <div class="horizontal-divider ml-mr-width"></div>
-                <div class="todo-cards">
-                    <div class="task-delete-checkbox">
-                        <input type="checkbox" name="" id="">
+                    <div class="horizontal-divider ml-mr-width"></div>
+                    <div class="todo-cards">
+                        <div class="task-delete-checkbox">
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <div class="task-details">
+                            <p class="task-title">
+                                <%= todo.description %>
+                            </p>
+                            <p class="task-due-date">
+                                <i class="far fa-calendar-alt calender-icon"></i>
+                                <%= todo.date %>
+                            </p>
+                        </div>
+                        <div class="task-category">
+                            <p>
+                                <%= todo.category %>
+                            </p>
+                        </div>
                     </div>
-                    <div class="task-details">
-                        <p class="task-title">Why not add a task?</p>
-                        <p class="task-due-date">
-                            <i class="far fa-calendar-alt calender-icon"></i>
-                            May 2,2020
-                        </p>
-                    </div>
-                    <div class="task-category">
-                        <p>SCHOOL</p>
-                    </div>
-                </div>
+
+                    <% } %>
+
+                        <!-- <div class="horizontal-divider ml-mr-width"></div>
+                        <div class="todo-cards">
+                            <div class="task-delete-checkbox">
+                                <input type="checkbox" name="" id="">
+                            </div>
+                            <div class="task-details">
+                                <p class="task-title">Why not add a task?</p>
+                                <p class="task-due-date">
+                                    <i class="far fa-calendar-alt calender-icon"></i>
+                                    May 2,2020
+                                </p>
+                            </div>
+                            <div class="task-category">
+                                <p>SCHOOL</p>
+                            </div>
+                        </div> -->
 
 
 

@@ -3,13 +3,35 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #96959573;
-  height: 95vh;
+  height: auto;
 }
 
 /* common classes */
 .ml-mr-width {
   margin: 0px 10px;
   width: 95% !important;
+}
+
+/* common bg-color classes for categories */
+
+.personal {
+  background-color: #0725b4;
+}
+
+.work {
+  background-color: #5e005e;
+}
+
+.school {
+  background-color: #ffc107;
+}
+
+.cleaning {
+  background-color: #0d440d;
+}
+
+.others {
+  background-color: #e61f63;
 }
 
 .main-container {
@@ -182,7 +204,7 @@ button[type='button'] {
 
 .task-category {
   margin-top: 20px;
-  background-color: red;
+  /* background-color: red; */
   width: 50px;
   display: flex;
   align-items: center;
