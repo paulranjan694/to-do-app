@@ -1,4 +1,4 @@
-# To-Do App
+# TODO App
 
 It's a simple to-do web application through which you can create your daily works with due date.
 Categories under which you can create your tasks are -
