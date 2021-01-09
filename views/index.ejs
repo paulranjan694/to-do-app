@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <!-- font awesome cdn linking -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="todo-container">
+            <h1 class="title">TODO App</h1>
+            <div class="horizontal-divider"></div>
+
+            <form id="todo-create-form" action="/create-todo" method="post">
+                <div class="row">
+                    <label class="form-label" for="desc">DESCRIPTION</label>
+                    <input type="text" name="description" id="desc" placeholder="What you need to do?" required>
+                </div>
+                <div class="horizontal-divider"></div>
+                <div class="row second">
+                    <div class="col">
+                        <label class="form-label" for="">CATEGORY</label>
+                        <select name="category" id="" required>
+                            <option value="None">Choose a category</option>
+                            <option value="PERSONAL">Personal</option>
+                            <option value="WORK">Work</option>
+                            <option value="SCHOOL">School</option>
+                            <option value="CLEANING">Cleaning</option>
+                            <option value="OTHERS">Others</option>
+                        </select>
+                    </div>
+                    <div class="vertical-divider"></div>
+                    <div class="col">
+                        <label class="form-label" for="">DUE DATE</label>
+                        <input type="date" name="date" id="" required>
+                    </div>
+                </div>
+                <div class="horizontal-divider"></div>
+
+                <div class="btn-group">
+                    <button class="btn" type="submit">
+                        <i class="fas fa-plus btn-icon"></i>
+                        ADD TASK
+                    </button>
+
+                    <button class="btn" type="button">
+                        <i class="far fa-trash-alt btn-icon"></i>
+                        DELETE TASKS
+                    </button>
+                </div>
+
+
+            </form>
+
+            <div class="todo-task-container">
+
+                <div class="horizontal-divider ml-mr-width"></div>
+                <div class="todo-cards">
+                    <div class="task-delete-checkbox">
+                        <input type="checkbox" name="" id="">
+                    </div>
+                    <div class="task-details">
+                        <p class="task-title">Why not add a task?</p>
+                        <p class="task-due-date">
+                            <i class="far fa-calendar-alt calender-icon"></i>
+                            May 2,2020
+                        </p>
+                    </div>
+                    <div class="task-category">
+                        <p>WORK</p>
+                    </div>
+                </div>
+
+                <div class="horizontal-divider ml-mr-width"></div>
+                <div class="todo-cards">
+                    <div class="task-delete-checkbox">
+                        <input type="checkbox" name="" id="">
+                    </div>
+                    <div class="task-details">
+                        <p class="task-title">Why not add a task?</p>
+                        <p class="task-due-date">
+                            <i class="far fa-calendar-alt calender-icon"></i>
+                            May 2,2020
+                        </p>
+                    </div>
+                    <div class="task-category">
+                        <p>SCHOOL</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <script src="/js/index.js"></script>
+
+</body>
+
+</html>
