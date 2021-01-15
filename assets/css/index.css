@@ -190,6 +190,7 @@ button[type='button'] {
 .task-details p:first-child {
   font-size: 18px;
   color: #5f5b5bfa;
+  /* text-decoration: overline; */
 }
 
 .task-details p:last-child {

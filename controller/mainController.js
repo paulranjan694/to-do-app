@@ -26,3 +26,16 @@ module.exports.createTodo = function (req, res) {
     return res.redirect('back');
   });
 };
+
+module.exports.deleteTodo = function (req, res) {
+  let data = req.body.checkedIndex;
+  for (let val of data) {
+    Todo.findByIdAndDelete(val, function (err) {
+      if (err) {
+        console.log('error in deleting from db');
+        return;
+      }
+    });
+  }
+  return res.redirect('/');
+};

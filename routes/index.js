@@ -8,6 +8,7 @@ console.log('router loaded');
 router.get('/', mainController.main);
 
 router.post('/create-todo', mainController.createTodo);
+router.post('/delete-todo', mainController.deleteTodo);
 
 router.use('/history', require('./history'));
 

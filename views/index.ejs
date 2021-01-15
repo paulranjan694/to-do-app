@@ -70,7 +70,11 @@
                     <div class="horizontal-divider ml-mr-width"></div>
                     <div class="todo-cards">
                         <div class="task-delete-checkbox">
-                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" name="delete_check_id" id="" value="<%= todo._id %>"
+                                onclick="deleteCheckedHandler('<%= todo._id %>')">
+                            <p>
+                                <%= todo._id %>
+                            </p>
                         </div>
                         <div class="task-details">
                             <p class="task-title">
@@ -108,7 +112,6 @@
                         </div> -->
 
 
-
             </div>
 
 
@@ -117,6 +120,7 @@
     </div>
 
     <script src="/js/index.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 </body>
 
