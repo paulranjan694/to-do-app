@@ -14,6 +14,7 @@ This To-do web app is made using-
 - Node.Js
 - Express - Node.js web app Framework
 - MongoDB
+- Mongoose - an Object Data Modeling (ODM) library for MongoDB and Node.js
 
 ---
 
