@@ -1,18 +1,34 @@
+/* style on body tag */
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #96959573;
   height: auto;
 }
 
-/* common classes */
+/* common css classes */
+/* margin-left, margin-right and width common style */
 .ml-mr-width {
   margin: 0px 10px;
   width: 95% !important;
 }
 
-/* common bg-color classes for categories */
+/* line through class */
+.line-through {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* disable the cursor and change the background and font color */
+.disabled {
+  cursor: not-allowed;
+  background-color: #9e9e9e !important;
+  color: #607d8b !important;
+}
+
+/* different bg-color classes for categories */
 
 .personal {
   background-color: #0725b4;
@@ -34,24 +50,28 @@ body {
   background-color: #e61f63;
 }
 
+/* main container class of the app */
 .main-container {
   width: 600px;
+  background-color: white;
 }
 
+/* todo app conatiner cls */
 .todo-container {
   height: auto;
-  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* horizontal divider cls */
 .horizontal-divider {
   background-color: #0000006e;
   height: 1px;
   width: 100%;
 }
 
+/* vertical divider cls */
 .vertical-divider {
   background-color: #0000006e;
   height: 48px;
@@ -59,68 +79,60 @@ body {
   margin: 0px 5px;
 }
 
+/* todo title in the app */
 .todo-container .title {
   color: grey;
   margin-bottom: 5px;
 }
 
+/* form for taking inputs */
 #todo-create-form {
   width: 100%;
 }
 
+/* form label style */
 .form-label {
   position: absolute;
   font-size: 12px;
   padding: 0px 5px;
 }
 
+/* form row class */
 .row {
   display: flex;
   flex-direction: column;
   height: 47px;
 }
 
+/* class particularly for 2nd row */
 .second {
   flex-direction: row;
   padding: 0px 5px;
 }
 
+/* form column class */
 .col {
   display: flex;
   flex-direction: column;
   width: 50%;
 }
 
-#todo-create-form input[type='text'] {
-  background-color: transparent;
-  border: none;
-}
-
-#todo-create-form input:focus {
-  outline: none;
-  background-color: #80808026;
-}
-
-#todo-create-form select:focus {
-  outline: none;
-  background-color: #80808026;
-}
-
-#todo-create-form select {
-  background-color: transparent;
-  border: none;
-}
-
-#todo-create-form input[type='date'] {
-  /* background-color: transparent; */
-  border: none;
-}
-
+/* style for input field */
 #todo-create-form input,
 select {
+  background-color: transparent;
+  border: none;
   padding: 15px 5px;
 }
 
+/* style for form input's on focus */
+#todo-create-form input:focus,
+select:focus {
+  outline: none;
+  background-color: #80808026;
+}
+
+/* button group container class  */
 .btn-group {
   display: flex;
   justify-content: center;
@@ -128,6 +140,7 @@ select {
   height: 15vh;
 }
 
+/* btn class for styling button */
 .btn {
   padding: 18px;
   margin: 3px;
@@ -137,75 +150,79 @@ select {
   font-size: 15px;
 }
 
+/* btn icon style */
 .btn-icon {
   font-size: 22px;
   margin-right: 10px;
 }
 
+/* Add btn style */
 button[type='submit'] {
   background-color: #0e0e0e;
 }
 
+/* delete btn style */
 button[type='button'] {
   background-color: #bf1206;
 }
 
+/* on focus, btn style  */
 .btn:focus {
   outline: none;
 }
 
+/* todo items container */
 .todo-task-container {
   display: flex;
   flex-direction: column;
   width: 95%;
 }
 
+/* todo cards */
 .todo-cards {
   display: flex;
   flex-direction: row;
   padding: 0px 15px;
-  /* justify-content: space-between; */
 }
 
+/* todo delete checkbox */
 .task-delete-checkbox {
-  display: flex;
-  align-items: center;
+  margin-top: 30px;
 }
 
-.task-delete-checkbox input {
-  padding: 10px;
-}
-
+/* task-details container */
 .task-details {
-  /* margin: 10px; */
   padding: 20px;
   width: 70%;
 }
 
+/* p tags inside task-details conatiner */
 .task-details p {
   margin: 0px;
   padding: 5px;
 }
 
+/* only for first p tag */
 .task-details p:first-child {
   font-size: 18px;
   color: #5f5b5bfa;
-  /* text-decoration: overline; */
 }
 
+/* only for last p tag */
 .task-details p:last-child {
   font-size: 13px;
   color: #889e9c;
 }
 
+/* calender icon inside task details*/
 .calender-icon {
   margin-right: 10px;
   font-size: 15px;
 }
 
+/* task-category cls */
 .task-category {
   margin-top: 20px;
-  /* background-color: red; */
   width: 50px;
   display: flex;
   align-items: center;
@@ -214,6 +231,7 @@ button[type='button'] {
   border-radius: 3px;
 }
 
+/* task-category p tag   */
 .task-category p {
   font-size: 12px;
   color: white;
